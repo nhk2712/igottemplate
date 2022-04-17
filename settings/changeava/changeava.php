@@ -52,6 +52,6 @@ $query=mysqli_query($db,$cmd);
 
 echo '<br/>Changed account\'s profile picture successfully!';
 $db->close();
-
-echo '<script>location.href="/"</script>';
 ?>
+
+<script>history.go(-2);</script>

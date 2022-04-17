@@ -32,6 +32,5 @@ $query2=mysqli_query($db,$cmd2);
 
 echo 'Changed password successfully!';
 $db->close();
-
-echo '<script>location.href="/"</script>';
 ?>
+<script>history.go(-2);</script>

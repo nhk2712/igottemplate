@@ -2,7 +2,7 @@
 $lang=$_SESSION['lang'];
 
 if ($lang=='en-US'){
-    $title="Home page";
+    $title="Discover";
     $discover='Discover';
     $search='Search';
     $go='Go';
@@ -15,7 +15,7 @@ if ($lang=='en-US'){
     $popular='Popular';
 }
 elseif ($lang=='vi'){
-    $title="Trang chủ";
+    $title="Khám phá";
     $discover='Khám phá';
     $search='Tìm kiếm';
     $go='Đi';

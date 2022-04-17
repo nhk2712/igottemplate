@@ -89,13 +89,13 @@ $res=mysqli_fetch_array($query);
                     $checkLikeQuery=mysqli_query($db,$checkLikeCmd);
                     $isLiked=mysqli_num_rows($checkLikeQuery);
                     if ($isLiked){
-                        echo '<a href="interact/like.php?q=unlike&t='.$templateId.'"><button id="likeButton" style="background-color:red;color:white;">';
-                        include('heart-fill.svg');
+                        echo '<a href="interact/like.php?q=unlike&t='.$templateId.'"><button id="likeButton">';
+                        echo '<img src="favorite-fill.svg">';
                         echo '</button></a>';
                     }
                     else{
-                        echo '<a href="interact/like.php?q=like&t='.$templateId.'"><button id="likeButton" style="background-color:white;color:red;">';
-                        include('heart-fill.svg');
+                        echo '<a href="interact/like.php?q=like&t='.$templateId.'"><button id="likeButton">';
+                        echo '<img src="favorite-border.svg">';
                         echo '</button></a>';
                     }
                 }
@@ -162,6 +162,7 @@ $res=mysqli_fetch_array($query);
         border-radius:5px;
         border:2px solid red;
         transition:all 0.5s;
+        background-color:white;
     }
     #likeButton:hover{
         transform:scale(1.1);

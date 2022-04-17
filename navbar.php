@@ -28,6 +28,10 @@ include('lang/navbar.php');
         }
         else{
             $uid=$_SESSION['uid'];
+            $date=date("YmdHis");
+            $updateCmd="UPDATE account SET lastactive='$date' WHERE id='$uid'";
+            mysqli_query($db,$updateCmd);
+
             $cmd = "SELECT username,avatar FROM account WHERE id='$uid'";
             $query = mysqli_query($db,$cmd);
             $res=mysqli_fetch_array($query);

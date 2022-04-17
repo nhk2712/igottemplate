@@ -1,0 +1,44 @@
+<title>Sign up</title>
+<h2>Sign up</h2>
+
+<form method="POST" action="signup.php">
+	<div>
+		<div class="mb-3">
+			<label class="form-label">Username</label>
+			<input type="text" name="username" required class="form-control" />
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Password</label>
+			<input type="password" name="password" required class="form-control">
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Confirm password</label>
+			<input type="password" name="cfpass" required class="form-control">
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Email</label>
+			<input type="email" name="email" required class="form-control">
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Phone number (not required)</label>
+			<input type="tel" name="phone" class="form-control">
+		</div>
+		<div>
+			<label class="form-label">Recovery question</label>
+			<select name="recovery" class="form-select" required>
+				<option value="" disabled selected>Choose a question</option>
+				<option value="mother-first-name">What is your mother's first name?</option>
+				<option value="where-father-born">Where was your father born?</option>
+				<option value="job-dream">What job did you dream as a young child?</option>
+				<option value="favorite-place">What is your favorite place to visit?</option>
+				<option value="high-school">What high school did you study in?</option>
+			</select>
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Answer</label>
+			<input type="text" name="answer" required class="form-control" />
+		</div>
+	</div>
+	<div style="display:flex;justify-content:space-evenly"><button type="submit" class="btn btn-outline-primary">Sign
+			up</button></div>
+</form>

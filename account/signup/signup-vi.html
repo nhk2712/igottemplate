@@ -1,0 +1,44 @@
+<title>Đăng kí</title>
+	<h2>Đăng kí</h2>
+
+	<form method="POST" action="signup.php">
+		<div>
+			<div class="mb-3">
+				<label class="form-label">Tên người dùng</label>
+				<input type="text" name="username" required class="form-control" />
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Mật khẩu</label>
+				<input type="password" name="password" required class="form-control">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Xác nhận mật khẩu</label>
+				<input type="password" name="cfpass" required class="form-control">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Email</label>
+				<input type="email" name="email" required class="form-control">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Số điện thoại (không bắt buộc)</label>
+				<input type="tel" name="phone" class="form-control">
+			</div>
+			<div>
+                <label class="form-label">Câu hỏi bảo mật</label>
+                <select name="recovery" class="form-select" required>
+                    <option value="" disabled selected>Chọn một câu hỏi</option>
+					<option value="mother-first-name">Tên riêng của mẹ bạn là gì?</option>
+					<option value="where-father-born">Cha bạn sinh ra ở đâu?</option>
+					<option value="job-dream">Bạn đã mơ ước nghề gì khi còn là một đứa trẻ?</option>
+					<option value="favorite-place">Địa điểm ưa thích của bạn là gì?</option>
+					<option value="high-school">Bạn học ở trường trung học nào?</option>
+                </select>
+            </div>
+			<div class="mb-3">
+				<label class="form-label">Câu trả lời</label>
+				<input type="text" name="answer" required class="form-control" />
+			</div>
+		</div>
+		<div style="display:flex;justify-content:space-evenly"><button type="submit"
+				class="btn btn-outline-primary">Đăng kí</button></div>
+	</form>

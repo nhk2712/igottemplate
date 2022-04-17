@@ -1,3 +1,8 @@
+<?php
+	session_start();
+	include('../../lang/account/signin/index.php');
+?>
+
 <head>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -6,7 +11,7 @@
 		crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shorcut icon" href="../../brand.jpg">
-	<title>Sign in</title>
+	<title><?php echo $title;?></title>
 </head>
 
 <div class="container">
@@ -17,20 +22,20 @@
 		</a>
 	</nav>
 
-	<h2>Sign in</h2>
+	<h2><?php echo $title;?></h2>
 
 	<form method="POST" action="signin.php">
 		<div>
 			<div class="mb-3">
-				<label class="form-label">Username</label>
+				<label class="form-label"><?php echo $username;?></label>
 				<input type="text" name="username" class="form-control" required>
 			</div>
 			<div class="mb-3">
-				<label class="form-label">Password</label>
+				<label class="form-label"><?php echo $password;?></label>
 				<input type="password" name="password" class="form-control" required>
 			</div>
 		</div>
 		<div style="display:flex;justify-content:space-evenly;margin-top:20px"><button type="submit"
-				class="btn btn-outline-primary">Sign in</button></div>
+				class="btn btn-outline-primary"><?php echo $title;?></button></div>
 	</form>
 </div>

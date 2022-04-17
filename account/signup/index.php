@@ -6,7 +6,6 @@
 		crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shorcut icon" href="../../brand.jpg">
-	<title>Sign up</title>
 </head>
 
 <div class="container">
@@ -17,6 +16,7 @@
 		</a>
 	</nav>
 
+	<title>Sign up</title>
 	<h2>Sign up</h2>
 
 	<form method="POST" action="signup.php">

@@ -13,6 +13,7 @@ if ($lang == 'en-US'){
     $feedback='Feedback';
     $about='About';
     $noUser='You have to sign in to manage your account.';
+    $feedbackLink='Send feedback to us';
 }
 elseif ($lang == 'vi'){
     $title='Cài đặt';
@@ -26,5 +27,6 @@ elseif ($lang == 'vi'){
     $feedback='Phản hồi';
     $about='Giới thiệu';
     $noUser='Bạn phải đăng nhập để quản lý tài khoản.';
+    $feedbackLink='Gửi phản hồi cho chúng tôi';
 }
 ?>

@@ -16,7 +16,7 @@ include('lang/navbar.php');
 
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" href="/">
-    <img src="../brand.jpg" width="50" height="50" class="d-inline-block align-top" alt="Brand logo">
+    <img src="/brand.jpg" width="50" height="50" class="d-inline-block align-top" alt="Brand logo">
     Brand name
   </a>
     <div style="margin-right:10px;">
@@ -32,17 +32,17 @@ include('lang/navbar.php');
             $query = mysqli_query($db,$cmd);
             $res=mysqli_fetch_array($query);
 
-            echo '<a href="../upload"><button type="button" class="btn btn-outline-primary">'.$upload.'</button></a>';
+            echo '<a href="/upload"><button type="button" class="btn btn-outline-primary">'.$upload.'</button></a>';
             echo '<div class="btn-group" role="group">';
             echo '<button id="btnGroupDrop1" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="border:none;background-color:transparent">';
-            echo '<img id="userava" src="../data/userava/'.$res['avatar'].'">';
+            echo '<img id="userava" src="/data/userava/'.$res['avatar'].'">';
             echo "<span style='margin-left:10px'>".$res['username'].'</span>';
             echo '
             </button>
             <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                <a class="dropdown-item" href="../account/signout">'.$signOut.'</a>
-                <a class="dropdown-item" href="../profile?uid='.$uid.'">'.$profile.'</a>
-                <a class="dropdown-item" href="../settings">'.$settings.'</a>
+                <a class="dropdown-item" href="/account/signout">'.$signOut.'</a>
+                <a class="dropdown-item" href="/profile?uid='.$uid.'">'.$profile.'</a>
+                <a class="dropdown-item" href="/settings">'.$settings.'</a>
             </ul></div>';
         }
         ?>

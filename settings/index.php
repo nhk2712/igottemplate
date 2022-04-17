@@ -55,6 +55,10 @@ $langOption=['<option value="en-US">English (US)</option>','<option value="vi">T
     ?>
 
     <h4><?php echo $feedback;?></h4>
+        <div class="list-group">
+            <a href="feedback" class="list-group-item list-group-item-action"><?php echo $feedbackLink;?></a>
+        </div>
+
     <h4><?php echo $about;?></h4>
 
 </div> <!--Closing container tag-->

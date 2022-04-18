@@ -38,4 +38,5 @@
 		<div style="display:flex;justify-content:space-evenly;margin-top:20px"><button type="submit"
 				class="btn btn-outline-primary"><?php echo $title;?></button></div>
 	</form>
+	<a href="../forgot"><?php echo $forgot;?></a>
 </div>

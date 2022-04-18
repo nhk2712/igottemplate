@@ -15,13 +15,14 @@ $phone = mysqli_real_escape_string($db,$_POST['phone']);
 $recovery = mysqli_real_escape_string($db,$_POST['recovery']);
 $answer = mysqli_real_escape_string($db,$_POST['answer']);
 $date=date("YmdHis");
+$lang=$_SESSION['lang'];
 
 $cmd1 = "SELECT username FROM account WHERE username='$username'";
 $query1 = mysqli_query($db,$cmd1);
 $num1 = mysqli_num_rows($query1);
 if ($num1) die('<h2>User already exists!</h2><a href="/account/signup"><button>Sign up again</button></a>');
 
-$cmd2 = "INSERT INTO account (username,password,email,phone,question,answer,created,lastactive) VALUES ('$username','$password','$email','$phone','$recovery','$answer','$date','$date')";
+$cmd2 = "INSERT INTO account (username,password,email,phone,question,answer,created,lastactive,lang) VALUES ('$username','$password','$email','$phone','$recovery','$answer','$date','$date','$lang')";
 $query2 = mysqli_query($db,$cmd2);
 
 echo '<h2>Signed up successfully!</h2>';

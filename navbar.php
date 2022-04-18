@@ -50,5 +50,6 @@ include('lang/navbar.php');
             </ul></div>';
         }
         ?>
+        <style>#userava{-webkit-clip-path:circle();}</style>
     </div>
 </nav>

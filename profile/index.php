@@ -24,8 +24,9 @@ $uid="";
             clip-path:circle();
         }
         #avatar{
-            width:300px;
+            width:100px;
             clip-path:circle();
+            -webkit-clip-path:circle();
         }
     </style>
 

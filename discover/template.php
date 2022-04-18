@@ -31,6 +31,7 @@ $uid="";
     #uploader{
         width:30px;
         clip-path:circle();
+        -webkit-clip-path:circle();
     }
 
     @media all and (max-width:1024px){

@@ -106,6 +106,7 @@ else echo '<p>No more search results!</p>';
     #userava{
         width:50px;
         clip-path:circle();
+        -webkit-clip-path:circle();
     }
     .thumb{
         width:100px;

@@ -41,3 +41,10 @@ Recovery questions:
 - What high school did you study in?
 
 NAME: iGotTemplate
+
+data
+ - preview
+ - slides
+ - thumbnail
+ - tmp
+ - userava
